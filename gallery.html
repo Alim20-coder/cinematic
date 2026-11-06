@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selected Projects | Cinematic Home Media Works Kuwait</title>
+  <meta name="description" content="Discover our portfolio of luxury private home theaters, VIP screening halls, and commercial acoustic installations across Kuwait.">
+  <link rel="icon" type="image/jpeg" href="css/logo.JPG">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="works-page">
+
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="css/logo.JPG" alt="Cinematic KW Logo" class="brand-icon">
+        <span data-i18n="brandName">Cinematic KW</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link" data-i18n="navHome">Home</a>
+        <a href="services.html" class="nav-link" data-i18n="navServices">Services</a>
+        <a href="gallery.html" class="nav-link active" data-i18n="navGallery">Gallery</a>
+        <a href="about.html" class="nav-link" data-i18n="navAbout">About</a>
+        <a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="lang-toggle-btn" data-i18n="langSwitch">العربية</button>
+        <button type="button" class="btn-book" data-i18n="btnBookNow">Book now</button>
+        <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Open mobile navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <span class="mobile-menu-brand" data-i18n="brandName">Cinematic KW</span>
+      <button type="button" class="mobile-close-btn" id="mobileCloseBtn">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link" data-i18n="navHome">Home</a></li>
+      <li><a href="services.html" class="mobile-nav-link" data-i18n="navServices">Services</a></li>
+      <li><a href="gallery.html" class="mobile-nav-link" data-i18n="navGallery">Gallery</a></li>
+      <li><a href="about.html" class="mobile-nav-link" data-i18n="navAbout">About</a></li>
+      <li><a href="contact.html" class="mobile-nav-link" data-i18n="navContact">Contact</a></li>
+    </ul>
+    <div class="mobile-menu-footer">
+      <button type="button" class="mobile-lang-btn" data-i18n="langSwitch">العربية</button>
+      <button type="button" class="mobile-btn-book" data-i18n="btnBookNow">Book now</button>
+    </div>
+  </div>
+
+  <section class="page-hero works-hero">
+    <div class="container">
+      <h1 class="page-hero-title" data-i18n="galleryPageTitle">Selected Project Portfolio</h1>
+      <p class="page-hero-sub" data-i18n="galleryPageSub">
+        Step inside our residential cinema builds, commercial screening spaces, and acoustic renovations across Kuwait.
+      </p>
+    </div>
+  </section>
+
+  <section class="overview-section works-section">
+    <div class="container">
+
+      <div class="works-filter" role="group" aria-label="Works categories">
+        <button type="button" class="works-filter-btn is-active" data-filter="brands" aria-controls="panel-brands" aria-pressed="true" data-i18n="filterBrands">Brands</button>
+        <button type="button" class="works-filter-btn" data-filter="chairs" aria-controls="panel-chairs" aria-pressed="false" data-i18n="filterChairs">Cinema Chair Designs</button>
+        <button type="button" class="works-filter-btn" data-filter="cinemas" aria-controls="panel-cinemas" aria-pressed="false" data-i18n="filterCinemas">Cinema Works</button>
+        <button type="button" class="works-filter-btn" data-filter="design" aria-controls="panel-design" aria-pressed="false" data-i18n="filterDesigns">Cinema Designs</button>
+        <button type="button" class="works-filter-btn" data-filter="contracting" aria-controls="panel-contracting" aria-pressed="false" data-i18n="filterContracting">Contracting</button>
+      </div>
+
+      <div class="works-panel" id="panel-brands" data-category="brands">
+        <div class="works-grid works-grid--center works-grid--contain" data-works="brands"></div>
+      </div>
+
+      <div class="works-panel" id="panel-chairs" data-category="chairs" hidden>
+        <div class="works-grid works-grid--center" data-works="chairs"></div>
+      </div>
+
+      <div class="works-panel" id="panel-cinemas" data-category="cinemas" hidden>
+
+        <article class="work-project">
+          <header class="work-head">
+            <h3 class="work-title" data-i18n="work1Title">VIP Cinema Room in Al-Siddeeq</h3>
+            <p class="work-spec" data-i18n="work1Spec">9.2.6 Dolby Atmos speaker system
+Wall cladding &amp; acoustic treatment: Fabric Tracking System</p>
+          </header>
+          <div class="works-grid">
+            <figure class="work-photo"><img src="css/works/cinema/p1 (1).jpeg" alt="VIP Cinema Room in Al-Siddeeq" loading="lazy"></figure>
+            <figure class="work-photo"><img src="css/works/cinema/p1 (2).jpeg" alt="VIP Cinema Room in Al-Siddeeq" loading="lazy"></figure>
+          </div>
+        </article>
+        <div class="work-divider" role="separator"></div>
+        <article class="work-project">
+          <header class="work-head">
+            <h3 class="work-title" data-i18n="work2Title">VIP Cinema Room in Al-Siddeeq</h3>
+            <p class="work-spec" data-i18n="work2Spec">7.2.4 Dolby Atmos speaker system
+Wall cladding &amp; acoustic treatment: Fabric Tracking System</p>
+          </header>
+          <div class="works-grid">
+            <figure class="work-photo"><img src="css/works/cinema/p2 (1).jpeg" alt="VIP Cinema Room in Al-Siddeeq" loading="lazy"></figure>
+            <figure class="work-photo"><img src="css/works/cinema/p2 (2).jpeg" alt="VIP Cinema Room in Al-Siddeeq" loading="lazy"></figure>
+          </div>
+        </article>
+        <div class="work-divider" role="separator"></div>
+        <article class="work-project">
+          <header class="work-head">
+            <h3 class="work-title" data-i18n="work3Title">VIP Cinema Room in Al-Fnaitees</h3>
+            <p class="work-spec" data-i18n="work3Spec">7.2.4 Dolby Atmos speaker system
+Wall cladding &amp; acoustic treatment: Flat Panel VMT</p>
+          </header>
+          <div class="works-grid">
+            <figure class="work-photo"><img src="css/works/cinema/p3 (1).jpeg" alt="VIP Cinema Room in Al-Fnaitees" loading="lazy"></figure>
+            <figure class="work-photo"><img src="css/works/cinema/p3 (2).jpeg" alt="VIP Cinema Room in Al-Fnaitees" loading="lazy"></figure>
+          </div>
+        </article>
+        <div class="work-divider" role="separator"></div>
+        <article class="work-project">
+          <header class="work-head">
+            <h3 class="work-title" data-i18n="work4Title">Cinema Room in Al-Fnaitees</h3>
+            <p class="work-spec" data-i18n="work4Spec">7.1.2 Dolby Atmos speaker system
+Wall cladding &amp; acoustic treatment: Fabric Tracking System</p>
+          </header>
+          <div class="works-grid">
+            <figure class="work-photo"><img src="css/works/cinema/p4 (1).jpeg" alt="Cinema Room in Al-Fnaitees" loading="lazy"></figure>
+            <figure class="work-photo"><img src="css/works/cinema/p4 (2).jpeg" alt="Cinema Room in Al-Fnaitees" loading="lazy"></figure>
+          </div>
+        </article>
+        <div class="work-divider" role="separator"></div>
+        <article class="work-project">
+          <header class="work-head">
+            <h3 class="work-title" data-i18n="work5Title">Cinema Room in Mubarak Al-Kabeer</h3>
+            <p class="work-spec" data-i18n="work5Spec">7.1.2 Dolby Atmos speaker system
+Wall cladding &amp; acoustic treatment: Fabric Tracking System</p>
+          </header>
+          <div class="works-grid">
+            <figure class="work-photo"><img src="css/works/cinema/p5 (1).jpeg" alt="Cinema Room in Mubarak Al-Kabeer" loading="lazy"></figure>
+            <figure class="work-photo"><img src="css/works/cinema/p5 (2).jpeg" alt="Cinema Room in Mubarak Al-Kabeer" loading="lazy"></figure>
+          </div>
+        </article>
+        <div class="work-divider" role="separator"></div>
+        <article class="work-project">
+          <header class="work-head">
+            <h3 class="work-title" data-i18n="work6Title">Cinema Room in South Surra</h3>
+            <p class="work-spec" data-i18n="work6Spec">7.1.4 Dolby Atmos speaker system
+Wall cladding &amp; acoustic treatment: Fabric Tracking System</p>
+          </header>
+          <div class="works-grid">
+            <figure class="work-photo"><img src="css/works/cinema/p6 (1).jpeg" alt="Cinema Room in South Surra" loading="lazy"></figure>
+            <figure class="work-photo"><img src="css/works/cinema/p6 (2).jpeg" alt="Cinema Room in South Surra" loading="lazy"></figure>
+          </div>
+        </article>
+        <div class="work-divider" role="separator"></div>
+        <article class="work-project">
+          <header class="work-head">
+            <h3 class="work-title" data-i18n="work7Title">Cinema Room in Al-Zahraa</h3>
+            <p class="work-spec" data-i18n="work7Spec">7.1.4 Dolby Atmos speaker system
+Wall cladding &amp; acoustic treatment: Fabric Tracking System</p>
+          </header>
+          <div class="works-grid">
+            <figure class="work-photo"><img src="css/works/cinema/p7 (1).jpeg" alt="Cinema Room in Al-Zahraa" loading="lazy"></figure>
+            <figure class="work-photo"><img src="css/works/cinema/p7 (2).jpeg" alt="Cinema Room in Al-Zahraa" loading="lazy"></figure>
+          </div>
+        </article>
+        <div class="work-divider" role="separator"></div>
+        <article class="work-project">
+          <header class="work-head">
+            <h3 class="work-title" data-i18n="work8Title">VIP Cinema Room in Al-Shaab Residential</h3>
+            <p class="work-spec" data-i18n="work8Spec">7.2.4 Dolby Atmos speaker system
+Wall cladding &amp; acoustic treatment: Pet Acoustics</p>
+          </header>
+          <div class="works-grid">
+            <figure class="work-photo"><img src="css/works/cinema/p8 (1).jpeg" alt="VIP Cinema Room in Al-Shaab Residential" loading="lazy"></figure>
+            <figure class="work-photo"><img src="css/works/cinema/p8 (2).jpeg" alt="VIP Cinema Room in Al-Shaab Residential" loading="lazy"></figure>
+          </div>
+        </article>
+        <div class="work-divider" role="separator"></div>
+        <article class="work-project">
+          <header class="work-head">
+            <h3 class="work-title" data-i18n="work9Title">Cinema Room in Al-Salam</h3>
+            <p class="work-spec" data-i18n="work9Spec">5.1.2 Dolby Atmos speaker system
+Wall cladding &amp; acoustic treatment: Pet Acoustics panels</p>
+          </header>
+          <div class="works-grid">
+            <figure class="work-photo"><img src="css/works/cinema/p9 (1).jpeg" alt="Cinema Room in Al-Salam" loading="lazy"></figure>
+            <figure class="work-photo"><img src="css/works/cinema/p9 (2).jpeg" alt="Cinema Room in Al-Salam" loading="lazy"></figure>
+          </div>
+        </article>
+        <div class="work-divider" role="separator"></div>
+        <article class="work-project">
+          <header class="work-head">
+            <h3 class="work-title" data-i18n="work10Title">Cinema Room in Al-Omariya</h3>
+            <p class="work-spec" data-i18n="work10Spec">5.1.2 Dolby Atmos speaker system
+Wall cladding &amp; acoustic treatment: Flat Panel VMT</p>
+          </header>
+          <div class="works-grid">
+            <figure class="work-photo"><img src="css/works/cinema/p10 (1).jpeg" alt="Cinema Room in Al-Omariya" loading="lazy"></figure>
+            <figure class="work-photo"><img src="css/works/cinema/p10 (2).jpeg" alt="Cinema Room in Al-Omariya" loading="lazy"></figure>
+          </div>
+        </article>
+        <div class="work-divider" role="separator"></div>
+        <article class="work-project">
+          <header class="work-head">
+            <h3 class="work-title" data-i18n="work11Title">VIP Cinema Room in Al-Mutlaa</h3>
+            <p class="work-spec" data-i18n="work11Spec">7.2.4 Dolby Atmos speaker system
+Wall cladding &amp; acoustic treatment: Fabric Tracking System</p>
+          </header>
+          <div class="works-grid">
+            <figure class="work-photo"><img src="css/works/cinema/p11 (1).jpeg" alt="VIP Cinema Room in Al-Mutlaa" loading="lazy"></figure>
+            <figure class="work-photo"><img src="css/works/cinema/p11 (2).jpeg" alt="VIP Cinema Room in Al-Mutlaa" loading="lazy"></figure>
+          </div>
+        </article>
+        <div class="work-divider" role="separator"></div>
+
+        <div class="hotel-block">
+          <h2 class="hotel-title" data-i18n="worksHotelTitle">Hotel Works</h2>
+          <div class="works-grid">
+          <figure class="work-photo"><img src="css/works/cinema/ho (1).jpeg" alt="Hotel works" loading="lazy"></figure>
+          <figure class="work-photo"><img src="css/works/cinema/ho (2).jpeg" alt="Hotel works" loading="lazy"></figure>
+          <figure class="work-photo"><img src="css/works/cinema/ho (3).jpeg" alt="Hotel works" loading="lazy"></figure>
+          <figure class="work-photo"><img src="css/works/cinema/ho (4).jpeg" alt="Hotel works" loading="lazy"></figure>
+          <figure class="work-photo"><img src="css/works/cinema/ho (5).jpeg" alt="Hotel works" loading="lazy"></figure>
+          <figure class="work-photo"><img src="css/works/cinema/ho (6).jpeg" alt="Hotel works" loading="lazy"></figure>
+          <figure class="work-photo"><img src="css/works/cinema/ho (7).jpeg" alt="Hotel works" loading="lazy"></figure>
+          <figure class="work-photo"><img src="css/works/cinema/ho (8).jpeg" alt="Hotel works" loading="lazy"></figure>
+          <figure class="work-photo"><img src="css/works/cinema/ho (9).jpeg" alt="Hotel works" loading="lazy"></figure>
+          <figure class="work-photo"><img src="css/works/cinema/ho (10).jpeg" alt="Hotel works" loading="lazy"></figure>
+          <figure class="work-photo"><img src="css/works/cinema/ho (11).jpeg" alt="Hotel works" loading="lazy"></figure>
+          <figure class="work-photo"><img src="css/works/cinema/ho (12).jpeg" alt="Hotel works" loading="lazy"></figure>
+          <figure class="work-photo"><img src="css/works/cinema/ho (13).jpeg" alt="Hotel works" loading="lazy"></figure>
+          <figure class="work-photo"><img src="css/works/cinema/ho (14).jpeg" alt="Hotel works" loading="lazy"></figure>
+          <figure class="work-photo"><img src="css/works/cinema/ho (15).jpeg" alt="Hotel works" loading="lazy"></figure>
+          <figure class="work-photo"><img src="css/works/cinema/ho (16).jpeg" alt="Hotel works" loading="lazy"></figure>
+          <figure class="work-photo"><img src="css/works/cinema/ho (17).jpeg" alt="Hotel works" loading="lazy"></figure>
+          <figure class="work-photo"><img src="css/works/cinema/ho (18).jpeg" alt="Hotel works" loading="lazy"></figure>
+          <figure class="work-photo"><img src="css/works/cinema/ho (19).jpeg" alt="Hotel works" loading="lazy"></figure>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="works-panel" id="panel-design" data-category="design" hidden>
+        <div class="works-groups" data-works="design"></div>
+      </div>
+
+      <div class="works-panel" id="panel-contracting" data-category="contracting" hidden>
+        <div class="works-groups" data-works="contracting"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-content-grid">
+      <div class="footer-col">
+        <h3 data-i18n="footerHoursTitle">Hours</h3>
+        <p class="footer-hours-text">
+          <span data-i18n="footerHoursDays">Saturday – Thursday</span><br>
+          <span data-i18n="footerHoursTime">10am – 6pm</span>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-i18n="footerFollowTitle">Follow</h3>
+        <ul class="footer-links-list">
+          <li>
+            <a href="https://instagram.com/Cinematic.KW" target="_blank" rel="noopener noreferrer" class="footer-link-item" data-i18n="footerFollowInsta">
+              Instagram (@Cinematic.KW)
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/96597925858" target="_blank" rel="noopener noreferrer" class="footer-link-item">
+              WhatsApp (+965 97925858)
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-address-col">
+        <div class="footer-map-frame">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3478.1702434150816!2d48.025649699999995!3d29.336006100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9d207bee2ceb%3A0x783056b617bec0d!2sCINEMATICKW!5e0!3m2!1sen!2skw!4v1792853960206!5m2!1sen!2skw" 
+            title="Cinematic KW Location"
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="strict-origin-when-cross-origin">
+          </iframe>
+        </div>
+
+        <div class="footer-address-info">
+          <h3 data-i18n="footerAddressTitle">Address :-</h3>
+          <p data-i18n="footerAddr1">Kuwait - Hawally: Block 7 -</p>
+          <p data-i18n="footerAddr2">Tunis street - Al-Rehab Complex -</p>
+          <p data-i18n="footerAddr3">floor number: 1 - Office 45.</p>
+          <p data-i18n="footerPhone">Phone : +965 - 97925858 / +965 - 90090154</p>
+          <p data-i18n="footerEmail">E-Mail: info@cinematickw.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright" data-i18n="footerCopyright">
+      All Rights reserved © 2021 Cinematic
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="bookingModal" aria-hidden="true" role="dialog">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">&times;</button>
+      <h3 class="modal-title" data-i18n="modalTitle">Schedule a Consultation</h3>
+      <p class="modal-desc" data-i18n="modalSubtitle">Meet our cinema architects & audio engineers at our Hawally showroom or on-site.</p>
+      <form id="bookingForm">
+        <div class="form-group">
+          <label class="form-label" for="bookName" data-i18n="formName">Full Name</label>
+          <input type="text" id="bookName" class="form-input" required placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="bookPhone" data-i18n="formPhone">Phone / WhatsApp</label>
+          <input type="tel" id="bookPhone" class="form-input" required placeholder="+965 ...">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="bookService" data-i18n="formService">Interested Service</label>
+          <select id="bookService" class="form-select">
+            <option value="Home Cinema" data-i18n="formServiceOpt1">Private Home Cinema (Turnkey)</option>
+            <option value="Acoustic Treatment" data-i18n="formServiceOpt2">Acoustic Treatment & Insulation</option>
+            <option value="Automation & Audio" data-i18n="formServiceOpt3">Smart Home Automation & Multi-Room Audio</option>
+            <option value="Commercial Screening" data-i18n="formServiceOpt4">Commercial Screening / Fit-Out</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="bookNotes" data-i18n="formNotes">Project Details / Room Dimensions</label>
+          <textarea id="bookNotes" class="form-textarea" rows="3" placeholder="Tell us about your room or project..."></textarea>
+        </div>
+        <button type="submit" class="btn-form-submit" data-i18n="formSubmit">Send Booking Request</button>
+      </form>
+      <div id="modalSuccess" style="display: none; text-align: center; padding: 2rem 0;">
+        <div style="font-size: 3rem; margin-bottom: 1rem;">✅</div>
+        <p style="color: #10b981; font-weight: 500; font-size: 1.1rem;" data-i18n="formSuccess">
+          Thank you! Our engineering team will contact you promptly on WhatsApp.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button type="button" class="lightbox-btn lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <button type="button" class="lightbox-btn lightbox-prev" id="lightboxPrev" aria-label="Previous">&#8249;</button>
+    <figure class="lightbox-stage">
+      <img class="lightbox-img" id="lightboxImg" alt="">
+      <figcaption class="lightbox-cap"><span id="lightboxCap"></span><span class="lightbox-count" id="lightboxCount"></span></figcaption>
+    </figure>
+    <button type="button" class="lightbox-btn lightbox-next" id="lightboxNext" aria-label="Next">&#8250;</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

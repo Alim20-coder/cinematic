@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Cinematic Home Media Works Kuwait</title>
+  <meta name="description" content="About Cinematic Home Media Works (Cinematech for Building Construction L.L.C.) established in Kuwait in 2021. Turnkey cinema and acoustic solutions.">
+  <link rel="icon" type="image/jpeg" href="css/logo.JPG">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Poppins:wght@400&family=Cairo:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .about-simple {
+      background: #ffffff;
+      color: #000000;
+      padding: 9rem 0 calc(9vw + 5rem);
+    }
+    .about-simple-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    .about-simple h2,
+    .about-simple .about-words {
+      font-family: 'Manrope', 'Cairo', sans-serif;
+      color: #000000;
+    }
+    .about-simple p {
+      font-family: 'Poppins', 'Cairo', sans-serif;
+      font-size: 0.85rem;
+      line-height: 1.6;
+      color: #000000;
+      margin: 0;
+    }
+    .about-simple-title {
+      font-size: 2.2rem;
+      font-weight: 500;
+      line-height: 1.2;
+      margin: 0 0 3.5rem;
+    }
+    .about-simple-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+      margin-bottom: 5rem;
+    }
+    .about-simple-approach {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 1.2;
+      margin: 0 0 2rem;
+    }
+    .about-simple-approach-text {
+      max-width: 460px;
+      margin-bottom: 5rem;
+    }
+    .about-words {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 2.5rem;
+      font-size: clamp(1.6rem, 4.2vw, 3rem);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+    }
+    html[lang="ar"] .about-simple h2,
+    html[lang="ar"] .about-simple .about-words,
+    html[lang="ar"] .about-simple p {
+      font-family: 'Cairo', sans-serif;
+    }
+    html[lang="ar"] .about-simple p { line-height: 1.9; }
+    html[lang="ar"] .about-words { letter-spacing: 0; }
+    @media (max-width: 768px) {
+      .about-simple { padding: 7rem 0 calc(8vw + 3.5rem); }
+      .about-simple-cols { grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 3.5rem; }
+      .about-simple-title { font-size: 1.7rem; margin-bottom: 2rem; }
+      .about-simple-approach { font-size: 1.5rem; }
+      .about-simple-approach-text { margin-bottom: 3.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="css/logo.JPG" alt="Cinematic KW Logo" class="brand-icon">
+        <span data-i18n="brandName">Cinematic KW</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link" data-i18n="navHome">Home</a>
+        <a href="services.html" class="nav-link" data-i18n="navServices">Services</a>
+        <a href="gallery.html" class="nav-link" data-i18n="navGallery">Gallery</a>
+        <a href="about.html" class="nav-link active" data-i18n="navAbout">About</a>
+        <a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="lang-toggle-btn" data-i18n="langSwitch">العربية</button>
+        <button type="button" class="btn-book" data-i18n="btnBookNow">Book now</button>
+        <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Open navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <span class="mobile-menu-brand" data-i18n="brandName">Cinematic KW</span>
+      <button type="button" class="mobile-close-btn" id="mobileCloseBtn">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link" data-i18n="navHome">Home</a></li>
+      <li><a href="services.html" class="mobile-nav-link" data-i18n="navServices">Services</a></li>
+      <li><a href="gallery.html" class="mobile-nav-link" data-i18n="navGallery">Gallery</a></li>
+      <li><a href="about.html" class="mobile-nav-link" data-i18n="navAbout">About</a></li>
+      <li><a href="contact.html" class="mobile-nav-link" data-i18n="navContact">Contact</a></li>
+    </ul>
+    <div class="mobile-menu-footer">
+      <button type="button" class="mobile-lang-btn" data-i18n="langSwitch">العربية</button>
+      <button type="button" class="mobile-btn-book" data-i18n="btnBookNow">Book now</button>
+    </div>
+  </div>
+
+  <section class="about-simple">
+    <div class="about-simple-inner">
+      <h2 class="about-simple-title" data-i18n="aboutIntroTitle">We Create Exceptional Cinema Experiences</h2>
+
+      <div class="about-simple-cols">
+        <p data-i18n="aboutIntroP1">Cinematic is a Kuwait-based company specializing in the design and integration of home cinemas, commercial cinemas, professional audio &amp; video systems, acoustic treatment, and smart home solutions.</p>
+        <p data-i18n="aboutIntroP2">From concept and system design to installation and final calibration, we bring together technology, acoustics, and thoughtful design to create exceptional entertainment spaces tailored to every project.</p>
+      </div>
+
+      <h2 class="about-simple-approach" data-i18n="aboutApproachTitle">Our Approach</h2>
+      <p class="about-simple-approach-text" data-i18n="aboutApproachText">Every space is different. We carefully consider room dimensions, acoustics, viewing distance, speaker placement, projection, lighting, and control to create a system that performs as beautifully as it looks.</p>
+
+      <div class="about-words">
+        <span data-i18n="aboutWordDesign">DESIGN</span>
+        <span data-i18n="aboutWordEngineering">ENGINEERING</span>
+        <span data-i18n="aboutWordIntegration">INTEGRATION</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-content-grid">
+      <div class="footer-col">
+        <h3 data-i18n="footerHoursTitle">Hours</h3>
+        <p class="footer-hours-text">
+          <span data-i18n="footerHoursDays">Saturday – Thursday</span><br>
+          <span data-i18n="footerHoursTime">10am – 6pm</span>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-i18n="footerFollowTitle">Follow</h3>
+        <ul class="footer-links-list">
+          <li>
+            <a href="https://instagram.com/Cinematic.KW" target="_blank" rel="noopener noreferrer" class="footer-link-item" data-i18n="footerFollowInsta">
+              Instagram (@Cinematic.KW)
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/96597925858" target="_blank" rel="noopener noreferrer" class="footer-link-item">
+              WhatsApp (+965 97925858)
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-address-col">
+        <div class="footer-map-frame">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3478.1702434150816!2d48.025649699999995!3d29.336006100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9d207bee2ceb%3A0x783056b617bec0d!2sCINEMATICKW!5e0!3m2!1sen!2skw!4v1792853960206!5m2!1sen!2skw" 
+            title="Cinematic KW Location"
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="strict-origin-when-cross-origin">
+          </iframe>
+        </div>
+
+        <div class="footer-address-info">
+          <h3 data-i18n="footerAddressTitle">Address :-</h3>
+          <p data-i18n="footerAddr1">Kuwait - Hawally: Block 7 -</p>
+          <p data-i18n="footerAddr2">Tunis street - Al-Rehab Complex -</p>
+          <p data-i18n="footerAddr3">floor number: 1 - Office 45.</p>
+          <p data-i18n="footerPhone">Phone : +965 - 97925858 / +965 - 90090154</p>
+          <p data-i18n="footerEmail">E-Mail: info@cinematickw.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright" data-i18n="footerCopyright">
+      All Rights reserved © 2021 Cinematic
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="bookingModal" aria-hidden="true" role="dialog">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">&times;</button>
+      <h3 class="modal-title" data-i18n="modalTitle">Schedule a Consultation</h3>
+      <p class="modal-desc" data-i18n="modalSubtitle">Meet our cinema architects & audio engineers at our Hawally showroom or on-site.</p>
+      <form id="bookingForm">
+        <div class="form-group">
+          <label class="form-label" for="bookName" data-i18n="formName">Full Name</label>
+          <input type="text" id="bookName" class="form-input" required placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="bookPhone" data-i18n="formPhone">Phone / WhatsApp</label>
+          <input type="tel" id="bookPhone" class="form-input" required placeholder="+965 ...">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="bookService" data-i18n="formService">Interested Service</label>
+          <select id="bookService" class="form-select">
+            <option value="Home Cinema" data-i18n="formServiceOpt1">Private Home Cinema (Turnkey)</option>
+            <option value="Acoustic Treatment" data-i18n="formServiceOpt2">Acoustic Treatment & Insulation</option>
+            <option value="Automation & Audio" data-i18n="formServiceOpt3">Smart Home Automation & Multi-Room Audio</option>
+            <option value="Commercial Screening" data-i18n="formServiceOpt4">Commercial Screening / Fit-Out</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="bookNotes" data-i18n="formNotes">Project Details / Room Dimensions</label>
+          <textarea id="bookNotes" class="form-textarea" rows="3" placeholder="Tell us about your room or project..."></textarea>
+        </div>
+        <button type="submit" class="btn-form-submit" data-i18n="formSubmit">Send Booking Request</button>
+      </form>
+      <div id="modalSuccess" style="display: none; text-align: center; padding: 2rem 0;">
+        <div style="font-size: 3rem; margin-bottom: 1rem;">✅</div>
+        <p style="color: #10b981; font-weight: 500; font-size: 1.1rem;" data-i18n="formSuccess">
+          Thank you! Our engineering team will contact you promptly on WhatsApp.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
