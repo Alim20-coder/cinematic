@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    brandName: "Cinematic KW",
+    brandName: "Cinematic",
     navHome: "Home",
     navServices: "Services",
     navGallery: "Gallery",
@@ -88,7 +88,7 @@ const translations = {
     brandsHeading: "Authorized Global AV Brands",
     brandsDesc: "We partner directly with industry-defining manufacturers to guarantee uncompromising fidelity and longevity.",
 
-    footerHoursTitle: "Hours",
+    footerHoursTitle: "Working Days",
     footerHoursDays: "Sunday – Thursday",
     footerHoursTime: "",
     footerFollowTitle: "Our Works",
@@ -188,7 +188,7 @@ const translations = {
     design8Title: "Al-Basman Cinema",
     design9Title: "Private Cinema Design",
     con1Title: "Beauty Salon - Bneid Al-Gar",
-    con2Title: "Al-Mahatta International Tower - Salmiya",
+    con2Title: "Al-Mat'hana Tower",
     con3Title: "Mosque - Sabah Al-Ahmad",
     con4Title: "Diwaniya - Fahaheel",
     con5Title: "Mosque Insulation - Taiba Al-Burjas, Abu Futaira",
@@ -236,7 +236,7 @@ const translations = {
     csWaDate: "Sent on"
   },
   ar: {
-    brandName: "سينماتك الكويت",
+    brandName: "سينماتك",
     navHome: "الرئيسية",
     navServices: "خدماتنا",
     navGallery: "أعمالنا",
@@ -324,7 +324,7 @@ const translations = {
     brandsHeading: "أبرز العلامات التجارية العالمية المعتمدة",
     brandsDesc: "نتعامل مع كبرى الشركات العالمية الرائدة لنضمن لك أعلى درجات الجودة والاعتمادية.",
 
-    footerHoursTitle: "ساعات العمل",
+    footerHoursTitle: "أيام العمل",
     footerHoursDays: "الأحد – الخميس",
     footerHoursTime: "",
     footerFollowTitle: "أقسام أعمالنا",
@@ -424,7 +424,7 @@ const translations = {
     design8Title: "سينما البصمان",
     design9Title: "تصميم سينما خاصة",
     con1Title: "صالون تجميل بمنطقة بنيد القار",
-    con2Title: "برج المحطة الدولية بالسالمية",
+    con2Title: "برج المطحنة",
     con3Title: "مسجد بمنطقة صباح الأحمد",
     con4Title: "ديوانية بمنطقة الفحاحيل",
     con5Title: "عوازل مسجد طيبة البرجس أبو فطيرة",
@@ -640,8 +640,8 @@ const worksConfig = {
       { prefix: 'c3', count: 3, titleKey: 'con3Title' },
       { prefix: 'c4', count: 7, titleKey: 'con4Title' },
       { prefix: 'c5', count: 4, titleKey: 'con5Title' },
-      { prefix: 'c6', count: 5, titleKey: 'con6Title' },
-      { prefix: 'c7', count: 13, titleKey: 'con7Title' },
+      { prefix: 'c6', count: 14, titleKey: 'con6Title' },
+      { prefix: 'c7', count: 13, titleKey: 'con7Title', hideMissing: true },
       { prefix: 'c8', count: 4, titleKey: 'con8Title' },
       { prefix: 'c9', count: 10, titleKey: 'con9Title' },
       { prefix: 'c10', count: 10, titleKey: 'con10Title' },
@@ -657,14 +657,21 @@ const worksConfig = {
   }
 };
 
-function makeWorkTile(folder, prefix, n, altKey) {
-  return makeWorkFile(folder, `${prefix} (${n})`, altKey);
+function makeWorkTile(folder, prefix, n, altKey, hideMissing) {
+  return makeWorkFile(folder, `${prefix} (${n})`, altKey, hideMissing);
 }
 
-function makeWorkFile(folder, file, altKey) {
+function makeWorkFile(folder, file, altKey, hideMissing) {
   const fig = document.createElement('figure');
   fig.className = 'work-photo';
   const img = document.createElement('img');
+  if (hideMissing) {
+    img.addEventListener('error', () => {
+      const project = fig.closest('.work-project');
+      fig.remove();
+      if (project && !project.querySelector('.work-photo')) project.remove();
+    });
+  }
   img.src = `${WORKS_ROOT}${folder}/${file}.jpeg`;
   img.loading = 'lazy';
   img.decoding = 'async';
@@ -703,7 +710,7 @@ function initWorksGallery() {
         art.innerHTML = `<header class="work-head"><h3 class="work-title" data-i18n="${p.titleKey}"></h3></header>`;
         const grid = document.createElement('div');
         grid.className = 'works-grid';
-        for (let n = 1; n <= p.count; n++) grid.appendChild(makeWorkTile(c.folder, p.prefix, n, p.titleKey));
+        for (let n = 1; n <= p.count; n++) grid.appendChild(makeWorkTile(c.folder, p.prefix, n, p.titleKey, p.hideMissing));
         (p.extra || []).forEach(f => grid.appendChild(makeWorkFile(c.folder, f, p.titleKey)));
         art.appendChild(grid);
         host.appendChild(art);
