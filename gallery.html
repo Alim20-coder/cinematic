@@ -20,7 +20,18 @@
       <nav class="nav-links">
         <a href="index.html" class="nav-link" data-i18n="navHome">Home</a>
         <a href="services.html" class="nav-link" data-i18n="navServices">Services</a>
-        <a href="gallery.html" class="nav-link active" data-i18n="navGallery">Gallery</a>
+        <div class="nav-item-dropdown">
+          <a href="gallery.html" class="nav-link active" data-i18n="navGallery">Gallery ▾</a>
+          <div class="nav-dropdown-menu">
+            <a href="gallery.html" class="nav-dropdown-link" style="color: #ffffff;" data-i18n="filterAll">✦ All Works</a>
+            <div class="nav-dropdown-divider"></div>
+            <a href="cinemas.html" class="nav-dropdown-link" data-i18n="filterCinemas">Cinema Works</a>
+            <a href="designs.html" class="nav-dropdown-link" data-i18n="filterDesigns">Cinema Designs</a>
+            <a href="chairs.html" class="nav-dropdown-link" data-i18n="filterChairs">Cinema Chair Designs</a>
+            <a href="brands.html" class="nav-dropdown-link" data-i18n="filterBrands">Brands</a>
+            <a href="contracting.html" class="nav-dropdown-link" data-i18n="filterContracting">Contracting</a>
+          </div>
+        </div>
         <a href="about.html" class="nav-link" data-i18n="navAbout">About</a>
         <a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a>
       </nav>
@@ -45,7 +56,12 @@
     <ul class="mobile-nav-list">
       <li><a href="index.html" class="mobile-nav-link" data-i18n="navHome">Home</a></li>
       <li><a href="services.html" class="mobile-nav-link" data-i18n="navServices">Services</a></li>
-      <li><a href="gallery.html" class="mobile-nav-link" data-i18n="navGallery">Gallery</a></li>
+      <li><a href="gallery.html" class="mobile-nav-link" data-i18n="navGallery">All Works</a></li>
+      <li><a href="cinemas.html" class="mobile-nav-link" style="padding-inline-start: 2rem; font-size: 1rem; color: #ffffff;" data-i18n="filterCinemas">↳ Cinema Works</a></li>
+      <li><a href="designs.html" class="mobile-nav-link" style="padding-inline-start: 2rem; font-size: 1rem; color: #ffffff;" data-i18n="filterDesigns">↳ Cinema Designs</a></li>
+      <li><a href="chairs.html" class="mobile-nav-link" style="padding-inline-start: 2rem; font-size: 1rem; color: #ffffff;" data-i18n="filterChairs">↳ Cinema Chair Designs</a></li>
+      <li><a href="brands.html" class="mobile-nav-link" style="padding-inline-start: 2rem; font-size: 1rem; color: #ffffff;" data-i18n="filterBrands">↳ Brands</a></li>
+      <li><a href="contracting.html" class="mobile-nav-link" style="padding-inline-start: 2rem; font-size: 1rem; color: #ffffff;" data-i18n="filterContracting">↳ Contracting</a></li>
       <li><a href="about.html" class="mobile-nav-link" data-i18n="navAbout">About</a></li>
       <li><a href="contact.html" class="mobile-nav-link" data-i18n="navContact">Contact</a></li>
     </ul>
@@ -68,7 +84,8 @@
     <div class="container">
 
       <div class="works-filter" role="group" aria-label="Works categories">
-        <button type="button" class="works-filter-btn is-active" data-filter="brands" aria-controls="panel-brands" aria-pressed="true" data-i18n="filterBrands">Brands</button>
+        <button type="button" class="works-filter-btn is-active" data-filter="all" aria-controls="panel-all" aria-pressed="true" data-i18n="filterAll">All Works</button>
+        <button type="button" class="works-filter-btn" data-filter="brands" aria-controls="panel-brands" aria-pressed="false" data-i18n="filterBrands">Brands</button>
         <button type="button" class="works-filter-btn" data-filter="chairs" aria-controls="panel-chairs" aria-pressed="false" data-i18n="filterChairs">Cinema Chair Designs</button>
         <button type="button" class="works-filter-btn" data-filter="cinemas" aria-controls="panel-cinemas" aria-pressed="false" data-i18n="filterCinemas">Cinema Works</button>
         <button type="button" class="works-filter-btn" data-filter="design" aria-controls="panel-design" aria-pressed="false" data-i18n="filterDesigns">Cinema Designs</button>
@@ -261,22 +278,36 @@ Wall cladding &amp; acoustic treatment: Fabric Tracking System</p>
       <div class="footer-col">
         <h3 data-i18n="footerHoursTitle">Hours</h3>
         <p class="footer-hours-text">
-          <span data-i18n="footerHoursDays">Saturday – Thursday</span><br>
-          <span data-i18n="footerHoursTime">10am – 6pm</span>
+          <span data-i18n="footerHoursDays">Sunday – Thursday</span>
         </p>
       </div>
 
       <div class="footer-col">
-        <h3 data-i18n="footerFollowTitle">Follow</h3>
+        <h3 data-i18n="footerPortfolioTitle">Our Works</h3>
         <ul class="footer-links-list">
           <li>
-            <a href="https://instagram.com/Cinematic.KW" target="_blank" rel="noopener noreferrer" class="footer-link-item" data-i18n="footerFollowInsta">
-              Instagram (@Cinematic.KW)
+            <a href="cinemas.html" class="footer-link-item" data-i18n="filterCinemas">
+              Cinema Works
             </a>
           </li>
           <li>
-            <a href="https://wa.me/96597925858" target="_blank" rel="noopener noreferrer" class="footer-link-item">
-              WhatsApp (+965 97925858)
+            <a href="designs.html" class="footer-link-item" data-i18n="filterDesigns">
+              Cinema Designs
+            </a>
+          </li>
+          <li>
+            <a href="chairs.html" class="footer-link-item" data-i18n="filterChairs">
+              Cinema Chair Designs
+            </a>
+          </li>
+          <li>
+            <a href="brands.html" class="footer-link-item" data-i18n="filterBrands">
+              Brands
+            </a>
+          </li>
+          <li>
+            <a href="contracting.html" class="footer-link-item" data-i18n="filterContracting">
+              Contracting
             </a>
           </li>
         </ul>

@@ -20,7 +20,20 @@
       <nav class="nav-links" aria-label="Main Navigation">
         <a href="index.html" class="nav-link" data-i18n="navHome">Home</a>
         <a href="services.html" class="nav-link active" data-i18n="navServices">Services</a>
-        <a href="gallery.html" class="nav-link" data-i18n="navGallery">Gallery</a>
+        
+        <div class="nav-item-dropdown">
+          <a href="gallery.html" class="nav-link" data-i18n="navGallery">Gallery ▾</a>
+          <div class="nav-dropdown-menu">
+            <a href="gallery.html" class="nav-dropdown-link" data-i18n="filterAll">✦ All Works</a>
+            <div class="nav-dropdown-divider"></div>
+            <a href="cinemas.html" class="nav-dropdown-link" data-i18n="filterCinemas">Cinema Works</a>
+            <a href="designs.html" class="nav-dropdown-link" data-i18n="filterDesigns">Cinema Designs</a>
+            <a href="chairs.html" class="nav-dropdown-link" data-i18n="filterChairs">Cinema Chair Designs</a>
+            <a href="brands.html" class="nav-dropdown-link" data-i18n="filterBrands">Brands</a>
+            <a href="contracting.html" class="nav-dropdown-link" data-i18n="filterContracting">Contracting</a>
+          </div>
+        </div>
+
         <a href="about.html" class="nav-link" data-i18n="navAbout">About</a>
         <a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a>
       </nav>
@@ -166,22 +179,36 @@
       <div class="footer-col">
         <h3 data-i18n="footerHoursTitle">Hours</h3>
         <p class="footer-hours-text">
-          <span data-i18n="footerHoursDays">Saturday – Thursday</span><br>
-          <span data-i18n="footerHoursTime">10am – 6pm</span>
+          <span data-i18n="footerHoursDays">Sunday – Thursday</span>
         </p>
       </div>
 
       <div class="footer-col">
-        <h3 data-i18n="footerFollowTitle">Follow</h3>
+        <h3 data-i18n="footerPortfolioTitle">Our Works</h3>
         <ul class="footer-links-list">
           <li>
-            <a href="https://instagram.com/Cinematic.KW" target="_blank" rel="noopener noreferrer" class="footer-link-item" data-i18n="footerFollowInsta">
-              Instagram
+            <a href="cinemas.html" class="footer-link-item" data-i18n="filterCinemas">
+              Cinema Works
             </a>
           </li>
           <li>
-            <a href="https://wa.me/96597925858" target="_blank" rel="noopener noreferrer" class="footer-link-item">
-              WhatsApp
+            <a href="designs.html" class="footer-link-item" data-i18n="filterDesigns">
+              Cinema Designs
+            </a>
+          </li>
+          <li>
+            <a href="chairs.html" class="footer-link-item" data-i18n="filterChairs">
+              Cinema Chair Designs
+            </a>
+          </li>
+          <li>
+            <a href="brands.html" class="footer-link-item" data-i18n="filterBrands">
+              Brands
+            </a>
+          </li>
+          <li>
+            <a href="contracting.html" class="footer-link-item" data-i18n="filterContracting">
+              Contracting
             </a>
           </li>
         </ul>

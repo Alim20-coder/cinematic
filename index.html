@@ -36,7 +36,20 @@
       <nav class="nav-links" aria-label="Main Navigation">
         <a href="index.html" class="nav-link active" data-i18n="navHome">Home</a>
         <a href="services.html" class="nav-link" data-i18n="navServices">Services</a>
-        <a href="gallery.html" class="nav-link" data-i18n="navGallery">Gallery</a>
+        
+        <div class="nav-item-dropdown">
+          <a href="gallery.html" class="nav-link" data-i18n="navGallery">Gallery ▾</a>
+          <div class="nav-dropdown-menu">
+            <a href="gallery.html" class="nav-dropdown-link" data-i18n="filterAll">✦ All Works</a>
+            <div class="nav-dropdown-divider"></div>
+            <a href="cinemas.html" class="nav-dropdown-link" data-i18n="filterCinemas">Cinema Works</a>
+            <a href="designs.html" class="nav-dropdown-link" data-i18n="filterDesigns">Cinema Designs</a>
+            <a href="chairs.html" class="nav-dropdown-link" data-i18n="filterChairs">Cinema Chair Designs</a>
+            <a href="brands.html" class="nav-dropdown-link" data-i18n="filterBrands">Brands</a>
+            <a href="contracting.html" class="nav-dropdown-link" data-i18n="filterContracting">Contracting</a>
+          </div>
+        </div>
+
         <a href="about.html" class="nav-link" data-i18n="navAbout">About</a>
         <a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a>
       </nav>
@@ -66,7 +79,22 @@
     <ul class="mobile-nav-list">
       <li><a href="index.html" class="mobile-nav-link" data-i18n="navHome">Home</a></li>
       <li><a href="services.html" class="mobile-nav-link" data-i18n="navServices">Services</a></li>
-      <li><a href="gallery.html" class="mobile-nav-link" data-i18n="navGallery">Gallery</a></li>
+      <li class="mobile-dropdown">
+        <details class="mobile-dropdown-details">
+          <summary class="mobile-nav-link mobile-dropdown-toggle">
+            <span data-i18n="navGallery">Gallery</span>
+            <span class="mobile-dropdown-chevron" aria-hidden="true"></span>
+          </summary>
+          <div class="mobile-dropdown-menu">
+            <a href="gallery.html" class="mobile-dropdown-link" data-i18n="filterAll">✦ All Works</a>
+            <a href="cinemas.html" class="mobile-dropdown-link" data-i18n="filterCinemas">Cinema Works</a>
+            <a href="designs.html" class="mobile-dropdown-link" data-i18n="filterDesigns">Cinema Designs</a>
+            <a href="chairs.html" class="mobile-dropdown-link" data-i18n="filterChairs">Cinema Chair Designs</a>
+            <a href="brands.html" class="mobile-dropdown-link" data-i18n="filterBrands">Brands</a>
+            <a href="contracting.html" class="mobile-dropdown-link" data-i18n="filterContracting">Contracting</a>
+          </div>
+        </details>
+      </li>
       <li><a href="about.html" class="mobile-nav-link" data-i18n="navAbout">About</a></li>
       <li><a href="contact.html" class="mobile-nav-link" data-i18n="navContact">Contact</a></li>
     </ul>
@@ -93,6 +121,7 @@
         <button type="button" class="btn-hero-primary open-book-modal" data-i18n="btnGetStarted">
           Get Started
         </button>
+        <a href="about.html" class="btn-hero-primary" data-i18n="btnAboutUs">About Us</a>
       </div>
     </div>
   </section>
@@ -129,6 +158,99 @@
         </div>
 
       </div>
+
+      <div class="section-cta-row">
+        <a href="services.html" class="btn-section btn-section--solid" data-i18n="btnBrowseServices">Browse Our Services</a>
+        <a href="contact.html" class="btn-section" data-i18n="btnContactUs">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+    <section class="home-portfolio-section">
+    <div class="home-portfolio-container">
+      <div class="section-head-center">
+        <span class="section-tag" data-i18n="homePortfolioBadge">Our Portfolio</span>
+        <h2 class="section-main-title" data-i18n="homePortfolioTitle">Explore Our Portfolio &amp; Divisions</h2>
+        <p class="section-main-sub" data-i18n="homePortfolioSub">
+          Every space has its own soul. Browse our specialized divisions from private luxury cinemas to turnkey commercial contracting.
+        </p>
+      </div>
+
+      <div class="home-portfolio-grid">
+
+                <article class="home-portfolio-card">
+          <div class="portfolio-card-media">
+            <img src="css/logo.JPG" alt="Cinematic KW" loading="lazy">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="portfolio-card-title" data-i18n="filterCinemas">Cinema Works</h3>
+            <a href="cinemas.html" class="portfolio-card-cta">
+              <span data-i18n="viewCategory">View Projects</span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </article>
+
+                <article class="home-portfolio-card">
+          <div class="portfolio-card-media">
+            <img src="css/logo.JPG" alt="Cinematic KW" loading="lazy">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="portfolio-card-title" data-i18n="filterDesigns">Cinema Designs</h3>
+            <a href="designs.html" class="portfolio-card-cta">
+              <span data-i18n="viewCategory">View Projects</span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </article>
+
+                <article class="home-portfolio-card">
+          <div class="portfolio-card-media">
+            <img src="css/logo.JPG" alt="Cinematic KW" loading="lazy">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="portfolio-card-title" data-i18n="filterChairs">Cinema Chair Designs</h3>
+            <a href="chairs.html" class="portfolio-card-cta">
+              <span data-i18n="viewCategory">View Projects</span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </article>
+
+                <article class="home-portfolio-card">
+          <div class="portfolio-card-media">
+            <img src="css/logo.JPG" alt="Cinematic KW" loading="lazy">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="portfolio-card-title" data-i18n="filterBrands">Brands</h3>
+            <a href="brands.html" class="portfolio-card-cta">
+              <span data-i18n="viewCategory">View Projects</span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </article>
+
+                <article class="home-portfolio-card">
+          <div class="portfolio-card-media">
+            <img src="css/logo.JPG" alt="Cinematic KW" loading="lazy">
+          </div>
+          <div class="portfolio-card-body">
+            <h3 class="portfolio-card-title" data-i18n="filterContracting">Contracting</h3>
+            <a href="contracting.html" class="portfolio-card-cta">
+              <span data-i18n="viewCategory">View Projects</span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="home-portfolio-bottom">
+        <a href="gallery.html" class="btn-portfolio-all">
+          <span data-i18n="viewAllProjects">View All Projects</span>
+          <span>✦</span>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -138,22 +260,36 @@
       <div class="footer-col">
         <h3 data-i18n="footerHoursTitle">Hours</h3>
         <p class="footer-hours-text">
-          <span data-i18n="footerHoursDays">Saturday – Thursday</span><br>
-          <span data-i18n="footerHoursTime">10am – 6pm</span>
+          <span data-i18n="footerHoursDays">Sunday – Thursday</span>
         </p>
       </div>
 
       <div class="footer-col">
-        <h3 data-i18n="footerFollowTitle">Follow</h3>
+        <h3 data-i18n="footerPortfolioTitle">Our Works</h3>
         <ul class="footer-links-list">
           <li>
-            <a href="https://instagram.com/Cinematic.KW" target="_blank" rel="noopener noreferrer" class="footer-link-item" data-i18n="footerFollowInsta">
-              Instagram
+            <a href="cinemas.html" class="footer-link-item" data-i18n="filterCinemas">
+              Cinema Works
             </a>
           </li>
           <li>
-            <a href="https://wa.me/96597925858" target="_blank" rel="noopener noreferrer" class="footer-link-item">
-              WhatsApp
+            <a href="designs.html" class="footer-link-item" data-i18n="filterDesigns">
+              Cinema Designs
+            </a>
+          </li>
+          <li>
+            <a href="chairs.html" class="footer-link-item" data-i18n="filterChairs">
+              Cinema Chair Designs
+            </a>
+          </li>
+          <li>
+            <a href="brands.html" class="footer-link-item" data-i18n="filterBrands">
+              Brands
+            </a>
+          </li>
+          <li>
+            <a href="contracting.html" class="footer-link-item" data-i18n="filterContracting">
+              Contracting
             </a>
           </li>
         </ul>
@@ -171,11 +307,11 @@
         </div>
 
         <div class="footer-address-info">
-          <h3 data-i18n="footerAddressTitle">Address :-</h3>
+          <h3 data-i18n="footerAddressTitle">Address:</h3>
           <p data-i18n="footerAddr1">Kuwait - Hawally: Block 7 -</p>
-          <p data-i18n="footerAddr2">Tunis street - Al-Rehab Complex -</p>
-          <p data-i18n="footerAddr3">floor number: 1 - Office 45.</p>
-          <p data-i18n="footerPhone">Phone : +965 - 97925858 / +965 - 90090154</p>
+          <p data-i18n="footerAddr2">Tunis Street - Al-Rehab Complex -</p>
+          <p data-i18n="footerAddr3">Floor number: 1 - Office 45.</p>
+          <p data-i18n="footerPhone">Phone: +965 - 97925858 / +965 - 90090154</p>
           <p data-i18n="footerEmail">E-Mail: info@cinematickw.com</p>
         </div>
       </div>
@@ -183,7 +319,7 @@
     </div>
 
     <div class="footer-copyright" data-i18n="footerCopyright">
-      All Rights reserved © 2021 Cinematic
+      All rights reserved © 2021 Cinematic
     </div>
   </footer>
 
@@ -231,6 +367,15 @@
     </div>
   </div>
 
+    <script>
+    (function () {
+      var details = document.querySelector('.mobile-dropdown-details');
+      if (!details || !window.matchMedia('(hover: hover)').matches) return;
+      var item = details.parentElement;
+      item.addEventListener('mouseenter', function () { details.open = true; });
+      item.addEventListener('mouseleave', function () { details.open = false; });
+    })();
+  </script>
   <script src="js/main.js"></script>
 </body>
 </html>

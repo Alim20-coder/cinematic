@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Cinema Designs & Architectural Renders | Cinematic KW</title>
+  <meta name="description" content="View our portfolio of 3D architectural renders, luxury home theater designs, and private entertainment room concepts in Kuwait.">
+  <link rel="icon" type="image/jpeg" href="css/logo.JPG">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="works-page">
+
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Cinematic KW Home">
+        <img src="css/logo.JPG" alt="Cinematic KW Star Logo" class="brand-icon">
+        <span data-i18n="brandName">Cinematic KW</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link" data-i18n="navHome">Home</a>
+        <a href="services.html" class="nav-link" data-i18n="navServices">Services</a>
+        
+        <div class="nav-item-dropdown">
+          <a href="gallery.html" class="nav-link active" data-i18n="navGallery">Gallery ▾</a>
+          <div class="nav-dropdown-menu">
+            <a href="gallery.html" class="nav-dropdown-link" data-i18n="filterAll">✦ All Works</a>
+            <div class="nav-dropdown-divider"></div>
+            <a href="cinemas.html" class="nav-dropdown-link" data-i18n="filterCinemas">Cinema Works</a>
+            <a href="designs.html" class="nav-dropdown-link" style="color: #ffffff;" data-i18n="filterDesigns">Cinema Designs</a>
+            <a href="chairs.html" class="nav-dropdown-link" data-i18n="filterChairs">Cinema Chair Designs</a>
+            <a href="brands.html" class="nav-dropdown-link" data-i18n="filterBrands">Brands</a>
+            <a href="contracting.html" class="nav-dropdown-link" data-i18n="filterContracting">Contracting</a>
+          </div>
+        </div>
+
+        <a href="about.html" class="nav-link" data-i18n="navAbout">About</a>
+        <a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="lang-toggle-btn" aria-label="Switch Language" data-i18n="langSwitch">
+          العربية
+        </button>
+
+        <button type="button" class="btn-book" data-i18n="btnBookNow">Book now</button>
+
+        <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Open mobile navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu-overlay" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-header">
+      <span class="mobile-menu-brand" data-i18n="brandName">Cinematic KW</span>
+      <button type="button" class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close menu">&times;</button>
+    </div>
+
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link" data-i18n="navHome">Home</a></li>
+      <li><a href="services.html" class="mobile-nav-link" data-i18n="navServices">Services</a></li>
+      <li><a href="gallery.html" class="mobile-nav-link" data-i18n="navGallery">All Works</a></li>
+      <li><a href="cinemas.html" class="mobile-nav-link" style="padding-inline-start: 2rem; font-size: 1rem; color: #ffffff;" data-i18n="filterCinemas">↳ Cinema Works</a></li>
+      <li><a href="designs.html" class="mobile-nav-link" style="padding-inline-start: 2rem; font-size: 1rem; color: #ffffff;" data-i18n="filterDesigns">↳ Cinema Designs</a></li>
+      <li><a href="chairs.html" class="mobile-nav-link" style="padding-inline-start: 2rem; font-size: 1rem; color: #ffffff;" data-i18n="filterChairs">↳ Cinema Chair Designs</a></li>
+      <li><a href="brands.html" class="mobile-nav-link" style="padding-inline-start: 2rem; font-size: 1rem; color: #ffffff;" data-i18n="filterBrands">↳ Brands</a></li>
+      <li><a href="contracting.html" class="mobile-nav-link" style="padding-inline-start: 2rem; font-size: 1rem; color: #ffffff;" data-i18n="filterContracting">↳ Contracting</a></li>
+      <li><a href="about.html" class="mobile-nav-link" data-i18n="navAbout">About</a></li>
+      <li><a href="contact.html" class="mobile-nav-link" data-i18n="navContact">Contact</a></li>
+    </ul>
+
+    <div class="mobile-menu-footer">
+      <button type="button" class="mobile-lang-btn" data-i18n="langSwitch">العربية</button>
+      <button type="button" class="mobile-btn-book" data-i18n="btnBookNow">Book now</button>
+    </div>
+  </div>
+
+  <section class="page-hero works-hero">
+    <div class="container">
+      <h1 class="page-hero-title" data-i18n="designsPageTitle">3D Cinema Designs</h1>
+      <p class="page-hero-sub" data-i18n="designsPageSub">
+        Detailed 3D architectural renders, acoustic modeling, and room concepts crafted for discerning clients.
+      </p>
+    </div>
+  </section>
+
+  <section class="overview-section works-section">
+    <div class="container">
+
+      <!-- Categories Filter Navigation Bar -->
+      <div class="works-filter" role="group" aria-label="Works categories">
+        <a href="gallery.html" class="works-filter-btn" data-i18n="filterAll">All Works</a>
+        <a href="brands.html" class="works-filter-btn" data-i18n="filterBrands">Brands</a>
+        <a href="chairs.html" class="works-filter-btn" data-i18n="filterChairs">Cinema Chair Designs</a>
+        <a href="cinemas.html" class="works-filter-btn" data-i18n="filterCinemas">Cinema Works</a>
+        <a href="designs.html" class="works-filter-btn is-active" data-i18n="filterDesigns">Cinema Designs</a>
+        <a href="contracting.html" class="works-filter-btn" data-i18n="filterContracting">Contracting</a>
+      </div>
+
+      <div class="works-panel" id="panel-design" data-category="design">
+        <div class="works-groups" data-works="design"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-content-grid">
+      
+      <div class="footer-col">
+        <h3 data-i18n="footerHoursTitle">Hours</h3>
+        <p class="footer-hours-text">
+          <span data-i18n="footerHoursDays">Sunday – Thursday</span>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-i18n="footerPortfolioTitle">Our Works</h3>
+        <ul class="footer-links-list">
+          <li>
+            <a href="cinemas.html" class="footer-link-item" data-i18n="filterCinemas">
+              Cinema Works
+            </a>
+          </li>
+          <li>
+            <a href="designs.html" class="footer-link-item" data-i18n="filterDesigns">
+              Cinema Designs
+            </a>
+          </li>
+          <li>
+            <a href="chairs.html" class="footer-link-item" data-i18n="filterChairs">
+              Cinema Chair Designs
+            </a>
+          </li>
+          <li>
+            <a href="brands.html" class="footer-link-item" data-i18n="filterBrands">
+              Brands
+            </a>
+          </li>
+          <li>
+            <a href="contracting.html" class="footer-link-item" data-i18n="filterContracting">
+              Contracting
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-address-col">
+        <div class="footer-map-frame">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3478.1702434150816!2d48.025649699999995!3d29.336006100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9d207bee2ceb%3A0x783056b617bec0d!2sCINEMATICKW!5e0!3m2!1sen!2skw!4v1792853960206!5m2!1sen!2skw" 
+            title="Cinematic KW Showroom Location"
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="strict-origin-when-cross-origin">
+          </iframe>
+        </div>
+
+        <div class="footer-address-info">
+          <h3 data-i18n="footerAddressTitle">Address :-</h3>
+          <p data-i18n="footerAddr1">Kuwait - Hawally: Block 7 -</p>
+          <p data-i18n="footerAddr2">Tunis street - Al-Rehab Complex -</p>
+          <p data-i18n="footerAddr3">floor number: 1 - Office 45.</p>
+          <p data-i18n="footerPhone">Phone : +965 - 97925858 / +965 - 90090154</p>
+          <p data-i18n="footerEmail">E-Mail: info@cinematickw.com</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-copyright" data-i18n="footerCopyright">
+      All Rights reserved © 2021 Cinematic
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="bookingModal" aria-hidden="true" role="dialog">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">&times;</button>
+      <h3 class="modal-title" data-i18n="modalTitle">Schedule a Consultation</h3>
+      <p class="modal-desc" data-i18n="modalSubtitle">Meet our cinema architects & audio engineers at our Hawally showroom or on-site.</p>
+
+      <form id="bookingForm">
+        <div class="form-group">
+          <label class="form-label" for="bookName" data-i18n="formName">Full Name</label>
+          <input type="text" id="bookName" class="form-input" required placeholder="Your name">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="bookPhone" data-i18n="formPhone">Phone / WhatsApp</label>
+          <input type="tel" id="bookPhone" class="form-input" required placeholder="+965 ...">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="bookService" data-i18n="formService">Interested Service</label>
+          <select id="bookService" class="form-select">
+            <option value="Home Cinema" data-i18n="formServiceOpt1">Private Home Cinema (Turnkey)</option>
+            <option value="Acoustic Treatment" data-i18n="formServiceOpt2">Acoustic Treatment & Insulation</option>
+            <option value="Automation & Audio" data-i18n="formServiceOpt3">Smart Home Automation & Multi-Room Audio</option>
+            <option value="Commercial Screening" data-i18n="formServiceOpt4">Commercial Screening / Fit-Out</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="bookNotes" data-i18n="formNotes">Project Details / Room Dimensions</label>
+          <textarea id="bookNotes" class="form-textarea" rows="3" placeholder="Tell us about your room or project..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-form-submit" data-i18n="formSubmit">Send Booking Request</button>
+      </form>
+
+      <div id="modalSuccess" style="display: none; text-align: center; padding: 2rem 0;">
+        <div style="font-size: 3rem; margin-bottom: 1rem;">✅</div>
+        <p style="color: #10b981; font-weight: 500; font-size: 1.1rem;" data-i18n="formSuccess">
+          Thank you! Our engineering team will contact you promptly on WhatsApp.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button type="button" class="lightbox-btn lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <button type="button" class="lightbox-btn lightbox-prev" id="lightboxPrev" aria-label="Previous">&#8249;</button>
+    <figure class="lightbox-stage">
+      <img class="lightbox-img" id="lightboxImg" alt="">
+      <figcaption class="lightbox-cap"><span id="lightboxCap"></span><span class="lightbox-count" id="lightboxCount"></span></figcaption>
+    </figure>
+    <button type="button" class="lightbox-btn lightbox-next" id="lightboxNext" aria-label="Next">&#8250;</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -12,6 +12,9 @@ const translations = {
     heroTitle: "Transform Your Home Into a Private Cinema",
     heroSubtitle: "We design and build premium home cinema experiences tailored to your space. From acoustic treatment to Dolby Atmos systems, we bring true cinema into your home.",
     btnGetStarted: "Get Started",
+    btnAboutUs: "About Us",
+    btnBrowseServices: "Browse Our Services",
+    btnContactUs: "Contact Us",
 
     card1Caption: "Discreet audio solutions that blend into your space while delivering exceptional sound performance",
     card2Caption: "Experience cinema the way it was meant to be right in your own home.",
@@ -86,17 +89,18 @@ const translations = {
     brandsDesc: "We partner directly with industry-defining manufacturers to guarantee uncompromising fidelity and longevity.",
 
     footerHoursTitle: "Hours",
-    footerHoursDays: "Saturday – Thursday",
-    footerHoursTime: "10am – 6pm",
-    footerFollowTitle: "Follow",
+    footerHoursDays: "Sunday – Thursday",
+    footerHoursTime: "",
+    footerFollowTitle: "Our Works",
+    footerPortfolioTitle: "Our Works",
     footerFollowInsta: "Instagram",
-    footerAddressTitle: "Address :-",
+    footerAddressTitle: "Address:",
     footerAddr1: "Kuwait - Hawally: Block 7 -",
-    footerAddr2: "Tunis street - Al-Rehab Complex -",
-    footerAddr3: "floor number: 1 - Office 45.",
-    footerPhone: "Phone : +965 - 97925858 / +965 - 90090154",
+    footerAddr2: "Tunis Street - Al-Rehab Complex -",
+    footerAddr3: "Floor number: 1 - Office 45.",
+    footerPhone: "Phone: +965 - 97925858 / +965 - 90090154",
     footerEmail: "E-Mail: info@cinematickw.com",
-    footerCopyright: "All Rights reserved © 2021 Cinematic",
+    footerCopyright: "All rights reserved © 2021 Cinematic",
     footerCredit: "Designed by Devora-Web",
 
     modalTitle: "Schedule a Consultation",
@@ -141,11 +145,38 @@ const translations = {
     work11Title: "VIP Cinema Room in Al-Mutlaa",
     work11Spec: "7.2.4 Dolby Atmos speaker system\nWall cladding & acoustic treatment: Fabric Tracking System",
     worksHotelTitle: "Hotel Works",
+    filterAll: "All Works",
     filterBrands: "Brands",
     filterChairs: "Cinema Chair Designs",
     filterCinemas: "Cinema Works",
     filterDesigns: "Cinema Designs",
     filterContracting: "Contracting",
+    openDedicatedPage: "Open Dedicated Page",
+    homePortfolioBadge: "Our Portfolio",
+    homePortfolioTitle: "Explore Our Portfolio & Divisions",
+    homePortfolioSub: "Every space has its own soul. Browse our specialized divisions from private luxury cinemas to turnkey commercial contracting.",
+    homeCinemasDesc: "Private luxury theaters with Dolby Atmos sound, custom woodwork and certified acoustics.",
+    homeDesignsDesc: "3D architectural visualizations, acoustic simulation, and turnkey concepts.",
+    homeChairsDesc: "Motorized VIP leather recliners, cooling cupholders, and ergonomic comfort.",
+    homeBrandsDesc: "Authorized global audiovisual, projection, and acoustic engineering partners.",
+    homeContractingDesc: "Commercial fit-outs, acoustic insulation, mosque audio, towers, and luxury interiors.",
+    viewCategory: "View Projects",
+    cinemasPageTitle: "Cinema Works & Theaters",
+    cinemasPageSub: "Explore our turnkey private cinema rooms, VIP commercial screening halls, and hospitality projects across Kuwait.",
+    designsPageTitle: "3D Cinema Designs",
+    designsPageSub: "Detailed 3D architectural renders, acoustic modeling, and room concepts crafted for discerning clients.",
+    chairsPageTitle: "Cinema Chair Designs",
+    chairsPageSub: "Discover our range of bespoke motorized VIP leather recliners engineered for maximum ergonomics and cinematic comfort.",
+    brandsPageTitle: "Authorized Global Brand Partners",
+    brandsPageSub: "We partner directly with world-class manufacturers of high-end audio, laser projection, and acoustic technologies.",
+    contractingPageTitle: "Contracting & Interior Fit-Out",
+    contractingPageSub: "Turnkey contracting, acoustic insulation, architectural woodwork, mosques, towers, and commercial spaces across Kuwait.",
+    badge3D: "3D Interactive Emblem",
+    title3D: "Cinematic KW 3D Experience",
+    desc3D: "Drag to rotate in 3D • Dynamic cinema lighting & specular sheen",
+    modeGold: "Cinema Gold",
+    modeSilver: "Platinum",
+    modeBlue: "Dolby Blue",
     worksSoon: "Photos coming soon",
     design1Title: "Al-Babtain Cinema",
     design2Title: "Al-Fodari Cinema",
@@ -217,6 +248,9 @@ const translations = {
     heroTitle: "حوّل منزلك إلى سينما خاصة فائقة الفخامة",
     heroSubtitle: "نصمم وننفذ أرقى تجارب السينما المنزلية المصممة خصيصاً لمساحتك. من المعالجة الصوتية الدقيقة إلى أنظمة Dolby Atmos المتطورة، ننقل سحر السينما الحقيقية إلى بيتك.",
     btnGetStarted: "ابدأ الآن",
+    btnAboutUs: "من نحن",
+    btnBrowseServices: "تصفح خدماتنا",
+    btnContactUs: "تواصل معنا",
 
     card1Caption: "حلول صوتية مدمجة بالأسقف تتماشى بانسيابية مع ديكور المكان وتقدّم أداءً صوتياً نقياً واستثنائياً.",
     card2Caption: "عش تجربة السينما الحقيقية كما خُلقت لتكون، في خصوصية وراحة منزلك الخاص.",
@@ -225,7 +259,7 @@ const translations = {
     whatWeOfferTitle: "ما نقدمه",
     whatWeOfferDesc: "نصمم وننفذ أرقى مساحات السينما والصوت والترفيه الاستثنائية — نجمع بين التصميم المدروس، الهندسة الصوتية، والتقنيات العالمية المتطورة.",
     designedBeyondTitle: "تصميم يتجاوز مجرد الأجهزة",
-    designedBeyondDesc: "السينما الحقيقية هي أكثر بكثير من مجرد بروجكتر وسماعات. كل عنصر — أبعاد الغرفة، تموضع السماعات، المعالجة الصوتية، زوايا الرؤية، الإضاءة والتحكم — يتم دراسته كجزء من تجربة متكاملة واحدة.",
+    designedBeyondDesc: "السينما الحقيقية هي أكثر بكثير من مجرد بروجكتر وسماعات. كل عنصر — أبعاد الغرفة، تموضع السماعات، المعالجة الصوتية، زوايا الرؤية، الإضاءة والتحكم — تتم دراسته كجزء من تجربة متكاملة واحدة.",
     serDuo1Title: "تصميم وتنفيذ السينما المنزلية",
     serDuo1Desc: "مساحات سينما منزلية مخصصة ومصممة حسب مساحة غرفتك، أسلوب حياتك وتطلعاتك — من الفكرة المبدئية حتى المعايرة والتشغيل النهائي.",
     serDuo2Title: "حلول السينما التجارية وقاعات العرض",
@@ -273,7 +307,7 @@ const translations = {
     projectsHeading: "إنجازات نفخر بتنفيذها في الكويت",
     projectsDesc: "تصفح باقة من أبرز مشاريعنا السكنية الفاخرة والمشاريع التجارية والأكاديمية المرموقة.",
     projKaifanTitle: "سينما منزلية فاخرة - كيفان",
-    projKaifanDesc: "سينما خاصة بمساحة 8 × 6 متر مجهزة بـ 12 كرسي VIP ونظام صوت محيطي استثنائي 11.2 ومعالجة كاملة للجدران.",
+    projKaifanDesc: "سينما خاصة بمساحة 8 × 6 متر مجهزة بـ 12 كرسياً VIP ونظام صوت محيطي استثنائي 11.2 ومعالجة كاملة للجدران.",
     projSalamTitle: "سينما منزلية خاصة - السلام",
     projSalamDesc: "سينما بمساحة 5 × 4 متر مجهزة بنظام Klipsch المرجعي ونظام عرض ليزري متطور من Sony.",
     projAstroTitle: "حضانة أسترو هيرو أكاديمية",
@@ -291,11 +325,12 @@ const translations = {
     brandsDesc: "نتعامل مع كبرى الشركات العالمية الرائدة لنضمن لك أعلى درجات الجودة والاعتمادية.",
 
     footerHoursTitle: "ساعات العمل",
-    footerHoursDays: "السبت – الخميس",
-    footerHoursTime: "10:00 صباحاً – 6:00 مساءً",
-    footerFollowTitle: "تابعنا",
+    footerHoursDays: "الأحد – الخميس",
+    footerHoursTime: "",
+    footerFollowTitle: "أقسام أعمالنا",
+    footerPortfolioTitle: "أقسام أعمالنا",
     footerFollowInsta: "إنستغرام",
-    footerAddressTitle: "العنوان وتفاصيل المعرض :-",
+    footerAddressTitle: "العنوان وتفاصيل المعرض:",
     footerAddr1: "الكويت - حولي: قطعة 7 -",
     footerAddr2: "شارع تونس - مجمع الرحاب -",
     footerAddr3: "الدور الأول - مكتب رقم 45.",
@@ -346,11 +381,38 @@ const translations = {
     work11Title: "غرفة سينما VIP بمنطقة المطلاع",
     work11Spec: "نظام سماعات \u20667.2.4 Dolby Atmos\u2069\nتجليد الجدران ومعالجة الصوت: \u2066Fabric Tracking System\u2069",
     worksHotelTitle: "أعمال فندقية",
+    filterAll: "جميع الأعمال",
     filterBrands: "براندات",
     filterChairs: "تصاميم كراسي سينما",
     filterCinemas: "أعمال السينما",
     filterDesigns: "تصاميم سينما",
     filterContracting: "مقاولات",
+    openDedicatedPage: "فتح الصفحة المخصصة",
+    homePortfolioBadge: "سابقة الأعمال",
+    homePortfolioTitle: "تصفح أقسام ومشاريع أعمالنا",
+    homePortfolioSub: "لكل مساحة طابعها الفريد. تصفح أقسامنا المتخصصة من أرقى صالات السينما المنزلية حتى كبرى مشاريع المقاولات والعزل الصوتي.",
+    homeCinemasDesc: "صالات سينما منزلية فاخرة بنظام دولبي أتموس ومعالجة صوتية مخصصة وتسليم مفتاح.",
+    homeDesignsDesc: "تصاميم ثلاثية الأبعاد ومحاكاة صوتية متقدمة لقاعات السينما والغرف الترفيهية الفاخرة.",
+    homeChairsDesc: "كراسي جلدية كهربائية VIP مزودة بحوامل أكواب مبردة ومصممة لأعلى مستويات الراحة.",
+    homeBrandsDesc: "أبرز العلامات التجارية العالمية المعتمدة في الصوت والصورة والعزل الصوتي المرجعي.",
+    homeContractingDesc: "تنفيذ متكامل لأعمال المقاولات، الديكورات، التشطيبات الفاخرة وعزل المساجد والأبراج والمجمعات.",
+    viewCategory: "استعراض الأعمال",
+    cinemasPageTitle: "أعمال وتنفيذ السينما",
+    cinemasPageSub: "جولة في أرقى صالات السينما المنزلية وقاعات العرض VIP والأعمال الفندقية التي نفذناها في الكويت.",
+    designsPageTitle: "تصاميم السينما ثلاثية الأبعاد",
+    designsPageSub: "مخططات وتصاميم ثلاثية الأبعاد ومحاكاة صوتية متقدمة لقاعات السينما والغرف الترفيهية الفاخرة.",
+    chairsPageTitle: "تصاميم كراسي السينما",
+    chairsPageSub: "تصفح تشكيلتنا الحصرية من كراسي السينما الجلدية الكهربائية VIP المصممة لأعلى مستويات الراحة والانسيابية.",
+    brandsPageTitle: "العلامات التجارية العالمية المعتمدة",
+    brandsPageSub: "نتعامل مع كبرى الشركات العالمية الرائدة لنضمن لك أعلى درجات الجودة والاعتمادية في الصوت والصورة.",
+    contractingPageTitle: "أعمال المقاولات والتشطيبات",
+    contractingPageSub: "تنفيذ مشاريع المقاولات المتكاملة والعزل الصوتي والديكورات للمساجد، الأبراج، الصالونات، والمساحات التجارية والسكنية.",
+    badge3D: "شعار ثلاثي الأبعاد تفاعلي",
+    title3D: "تجربة سينماتك 3D",
+    desc3D: "اسحب للتدوير 360° • إضاءة سينمائية حية وانعكاسات معدنية",
+    modeGold: "ذهبي سينمائي",
+    modeSilver: "بلاتينيوم",
+    modeBlue: "دولبي أزرق",
     worksSoon: "الصور قريباً",
     design1Title: "سينما البابطين",
     design2Title: "سينما الفودري",
@@ -685,33 +747,92 @@ function initWorksFilter() {
   const buttons = document.querySelectorAll('.works-filter-btn');
   const panels = document.querySelectorAll('.works-panel');
 
-  if (!buttons.length || !panels.length) return;
+  if (!buttons.length) return;
 
-  function showCategory(category) {
+  if (panels.length > 1) {
+    function showCategory(category) {
+      buttons.forEach(btn => {
+        const isActive = btn.getAttribute('data-filter') === category;
+        btn.classList.toggle('is-active', isActive);
+        btn.setAttribute('aria-pressed', String(isActive));
+      });
+
+      panels.forEach(panel => {
+        const show = (category === 'all' || panel.getAttribute('data-category') === category);
+        panel.hidden = !show;
+        if (show) {
+          panel.querySelectorAll('.work-photo, .work-card').forEach((el, i) => {
+            el.style.setProperty('--i', Math.min(i, 14));
+          });
+        }
+      });
+    }
+
     buttons.forEach(btn => {
-      const isActive = btn.getAttribute('data-filter') === category;
-      btn.classList.toggle('is-active', isActive);
-      btn.setAttribute('aria-pressed', String(isActive));
-    });
-
-    panels.forEach(panel => {
-      const show = panel.getAttribute('data-category') === category;
-      panel.hidden = !show;
-      if (show) {
-        panel.querySelectorAll('.work-photo, .work-card').forEach((el, i) => {
-          el.style.setProperty('--i', Math.min(i, 14));
-        });
+      if (btn.tagName === 'BUTTON') {
+        btn.addEventListener('click', () => showCategory(btn.getAttribute('data-filter')));
       }
     });
-  }
 
-  buttons.forEach(btn => {
-    btn.addEventListener('click', () => showCategory(btn.getAttribute('data-filter')));
+    const fromHash = location.hash.slice(1);
+    const valid = Array.from(buttons).some(b => b.getAttribute('data-filter') === fromHash);
+    if (valid) {
+      showCategory(fromHash);
+    }
+  }
+}
+
+function init3DInteractions() {
+  const brandLogos = document.querySelectorAll('.brand-logo');
+  brandLogos.forEach(logo => {
+    logo.classList.add('brand-logo-3d');
+    logo.addEventListener('mousemove', (e) => {
+      const rect = logo.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      const rotY = (x / (rect.width / 2)) * 14;
+      const rotX = -(y / (rect.height / 2)) * 14;
+      logo.style.transform = `perspective(600px) rotateX(${rotX.toFixed(2)}deg) rotateY(${rotY.toFixed(2)}deg) scale3d(1.04, 1.04, 1.04)`;
+    });
+    logo.addEventListener('mouseleave', () => {
+      logo.style.transform = 'perspective(600px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+    });
   });
 
-  const fromHash = location.hash.slice(1);
-  const valid = Array.from(buttons).some(b => b.getAttribute('data-filter') === fromHash);
-  showCategory(valid ? fromHash : buttons[0].getAttribute('data-filter'));
+  const cards = document.querySelectorAll('.home-portfolio-card, .feature-card');
+  cards.forEach(card => {
+    card.classList.add('has-3d-tilt');
+    
+    if (!card.querySelector('.card-3d-glare')) {
+      const glare = document.createElement('div');
+      glare.className = 'card-3d-glare';
+      card.appendChild(glare);
+    }
+
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      const rotX = -((y - centerY) / centerY) * 10;
+      const rotY = ((x - centerX) / centerX) * 10;
+
+      card.style.transform = `perspective(900px) rotateX(${rotX.toFixed(2)}deg) rotateY(${rotY.toFixed(2)}deg) translateZ(8px)`;
+      
+      const glare = card.querySelector('.card-3d-glare');
+      if (glare) {
+        glare.style.background = `radial-gradient(circle at ${(x / rect.width) * 100}% ${(y / rect.height) * 100}%, rgba(230, 207, 162, 0.28) 0%, rgba(255, 255, 255, 0.08) 35%, transparent 70%)`;
+        glare.style.opacity = '1';
+      }
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(900px) rotateX(0deg) rotateY(0deg) translateZ(0)';
+      const glare = card.querySelector('.card-3d-glare');
+      if (glare) glare.style.opacity = '0';
+    });
+  });
 }
 
 function initWorksLightbox() {
@@ -897,6 +1018,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initWorksFilter();
   initWorksLightbox();
   initAmbientSmoke();
+  init3DInteractions();
 
   document.querySelectorAll('.lang-toggle-btn, .mobile-lang-btn').forEach(btn => {
     btn.addEventListener('click', toggleLanguage);
