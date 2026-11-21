@@ -2468,9 +2468,9 @@ html[dir="rtl"] .home-portfolio-card:hover .portfolio-card-cta span.arrow {
   top: 100%;
   inset-inline-start: -1rem;
   min-width: 230px;
-  background: rgba(14, 14, 18, 0.96);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
+  background: #000000;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   padding: 0.5rem 0;
@@ -2495,12 +2495,13 @@ html[dir="rtl"] .home-portfolio-card:hover .portfolio-card-cta span.arrow {
   gap: 0.6rem;
   padding: 0.6rem 1.25rem;
   font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.85);
+  color: #ffffff;
+  background: #000000;
   transition: background 0.18s ease, color 0.18s ease, padding-inline-start 0.18s ease;
 }
 
 .nav-dropdown-link:hover {
-  background: rgba(255, 255, 255, 0.12);
+  background: #222222;
   color: #ffffff;
   padding-inline-start: 1.45rem;
 }
@@ -2509,4 +2510,43 @@ html[dir="rtl"] .home-portfolio-card:hover .portfolio-card-cta span.arrow {
   height: 1px;
   background: rgba(255, 255, 255, 0.1);
   margin: 0.4rem 0;
+}
+
+/* Gallery dropdown arrow (CSS-drawn so language switching doesn't remove it) */
+.nav-item-dropdown > .nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.nav-item-dropdown > .nav-link::before {
+  content: '';
+  order: 2;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-inline-end: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
+.nav-item-dropdown:hover > .nav-link::before,
+.nav-item-dropdown:focus-within > .nav-link::before {
+  transform: translateY(1px) rotate(-135deg);
+}
+
+.mobile-dropdown-toggle {
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: -0.01em;
+}
+
+.mobile-dropdown-menu {
+  background: #000000;
+}
+
+.mobile-dropdown-link {
+  color: #ffffff;
+  font-size: 1.05rem;
 }

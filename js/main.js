@@ -510,7 +510,7 @@ function initMobileMenu() {
   const hamburgerBtn = document.getElementById('hamburgerBtn');
   const mobileMenu = document.getElementById('mobileMenu');
   const closeBtn = document.getElementById('mobileCloseBtn');
-  const mobileLinks = document.querySelectorAll('.mobile-nav-link, .mobile-btn-book');
+  const mobileLinks = document.querySelectorAll('.mobile-nav-link, .mobile-dropdown-link, .mobile-btn-book');
 
   if (!hamburgerBtn || !mobileMenu) return;
 
