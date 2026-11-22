@@ -2550,3 +2550,47 @@ html[dir="rtl"] .home-portfolio-card:hover .portfolio-card-cta span.arrow {
   color: #ffffff;
   font-size: 1.05rem;
 }
+
+/* ==========================================================
+   Gallery dropdown – locked appearance (desktop + mobile)
+   Same look as before; colors can no longer change after
+   going to another page and coming back (:visited / :focus /
+   :active / sticky touch-hover).
+   ========================================================== */
+.nav-dropdown-link,
+.nav-dropdown-link:link,
+.nav-dropdown-link:visited,
+.nav-dropdown-link:focus,
+.nav-dropdown-link:focus-visible,
+.nav-dropdown-link:active,
+.nav-dropdown-link:hover {
+  color: #ffffff;
+  -webkit-tap-highlight-color: transparent;
+  /* color is never animated, only background / padding */
+  transition: background 0.18s ease, padding-inline-start 0.18s ease;
+}
+
+.mobile-dropdown-link,
+.mobile-dropdown-link:link,
+.mobile-dropdown-link:visited,
+.mobile-dropdown-link:focus,
+.mobile-dropdown-link:focus-visible,
+.mobile-dropdown-link:active,
+.mobile-dropdown-link:hover {
+  color: #ffffff;
+  -webkit-tap-highlight-color: transparent;
+  transition: background 0.18s ease;
+}
+
+@media (hover: none) {
+  .nav-dropdown-link:hover {
+    background: #000000;
+    padding-inline-start: 1.25rem;
+  }
+  .mobile-dropdown-link:hover {
+    background: transparent;
+  }
+  .mobile-nav-link:hover {
+    opacity: 1;
+  }
+}

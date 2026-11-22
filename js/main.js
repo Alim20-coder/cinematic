@@ -1031,3 +1031,16 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', toggleLanguage);
   });
 });
+
+/* Back/forward cache: restore the nav to the same state as a fresh load */
+window.addEventListener('pageshow', (e) => {
+  if (!e.persisted) return;
+  if (document.activeElement && document.activeElement !== document.body) {
+    document.activeElement.blur();
+  }
+  document.querySelectorAll('.mobile-dropdown-details').forEach(d => d.removeAttribute('open'));
+  const mm = document.getElementById('mobileMenu');
+  if (mm) mm.classList.remove('is-active');
+  const bm = document.getElementById('bookingModal');
+  if (!(bm && bm.classList.contains('is-active'))) document.body.style.overflow = '';
+});
